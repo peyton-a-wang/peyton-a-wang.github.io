@@ -1,12 +1,12 @@
 # Theme Settings
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "dirt"
+minimal_mistakes_skin    : "default"
 
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Peyton Wang"
-title_separator          : "|"
+title_separator          : "-"
 name                     : "Peyton Wang"
 url                      : "https://peyton-a-wang.github.io/"
 repository               : "peyton-a-wang/peyton-a-wang.github.io"
@@ -117,6 +117,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-target-blank
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -133,6 +135,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+# https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -142,19 +155,21 @@ compress_html:
     envs: development
 
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-      comments: true
+# Collections
+collections:
+  - experience
+  - projects
 
+collections:
+  experience:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+
+# Front Matter Defaults
 defaults:
   # _pages
   - scope:
@@ -162,3 +177,27 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: true
+
+defaults:
+  # _experience
+  - scope:
+      path: ""
+      type: experience
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+
+defaults:
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+

@@ -11,7 +11,6 @@ show_title: false
 I'm a current SWE @ [Splunk][splunk], former SWE intern @ [E*TRADE from Morgan Stanley][etrade-ms], and [Wellesley College][wellesley] alum ('22). Among my friends and family, I'm also known as the Designated IT, Fun-Sized Pey, and Most Likely to Burn Down the Kitchen from Microwaving Food.
 
 When I'm not at work or asleep, you can find me:  
-   
 🎤 &nbsp; singing and recording with friends  
 🧩 &nbsp; solving NYT crossword and sudoku puzzles  
 💪 &nbsp; taking walks around the neighborhood with my family  

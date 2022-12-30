@@ -1,12 +1,14 @@
 ---
 layout: single
-title: "React App: DMV Practice Questions"
+title: Chinese DMV Practice Exam
 date: 2022-07-24 00:04:20 -0000
 toc: true
 toc_icon: "car"
+excerpt: "React app with practice questions for my grandma to study for her DMV senior renewal test."
 ---
 
-To help my grandma prepare for her California DMV senior license renewal written exam, I created a React web application for her to study 250+ practice questions in Chinese. You can check out the [app here][app] and the [repo here][repo]!
+[Final App!][app]{: .btn .btn--info}
+[Repo][repo]{: .btn .btn--inverse}
 
 ## Overview
 
@@ -16,11 +18,44 @@ Over the summer, my grandma wanted to study for the exam, but she couldn't find 
 
 ### Solution
 
-As I wanted to both help my grandma and learn how to use React, I developed and designed a React App that allowed my grandma to study the scraped practice questions on an intuitive interface. Furthermore, I conducted extensive user testing to continuously implement feedback and additional features to facilitate her learning. She passed the test a few weeks later!
+As I wanted to both help my grandma and learn how to use React, I developed and designed a [React app][app] that allowed my grandma to study the scraped practice questions on an intuitive interface. Furthermore, I conducted extensive user testing and sought feedback to understand which additional features and enhancements would best facilitate her learning. She passed the test a few weeks later!
+
+## Design
+
+As my grandma would be the app's primary user, I implemented a simple design that enabled her to answer one question at a time. After selecting an option, its correctness is indicated by the button color and the alert with a message. In addition, the large arrows allow for moving backward and forward between questions, or the exact question number can be selected from the dropdown list. Upon returning to a specific question, the order of the options are randomly shuffled.
+
+<figure class="third">
+  <a href="/assets/images/dmv-page-selector.png"><img src="/assets/images/dmv-page-selector.png"></a>
+  <a href="/assets/images/dmv-correct.png"><img src="/assets/images/dmv-correct.png"></a>
+  <a href="/assets/images/dmv-wrong.png"><img src="/assets/images/dmv-wrong.png"></a>
+</figure>
+
+## Usage
+
+To run this app locally, follow the steps below!
+
+Clone this repository.
+
+{% highlight shell %}
+git clone https://github.com/peyton-a-wang/chinese-practice-dmv-test.git
+{% endhighlight %}
+
+Install dependencies from the root directory.  
+
+{% highlight shell %}
+cd chinese-practice-dmv-test
+npm install
+{% endhighlight %}
+
+Run the app in development mode and view it in the browser.
+
+{% highlight shell %}
+npm start
+{% endhighlight %}
 
 ## Technology & Tools
 
-### Languages
+### Languages & Libraries
 
 <div class="tech-logos">
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>

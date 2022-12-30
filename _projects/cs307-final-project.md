@@ -1,21 +1,29 @@
 ---
 layout: single
-title:  "Computer Graphics (CS 307) Final Project"
+title: Carousel Graphics Scene
 date: 2021-03-29 00:04:20 -0000
 toc: true
+excerpt: "Animated and interactive 3D carousel music box developed with Three.js."
 ---
 
-For my final project in Wellesley's computer graphics course (CS 307), I collaborated with a classmate (Isa Lie '23) on creating a 3D graphics scene with an interactive, animated carousel music box using JavaScript. You can check out the [final version of the project here][project] and the [repo with class assignments here][repo]!
+[Final Project!][project]{: .btn .btn--info}
+[Repo][repo]{: .btn .btn--inverse}
+[Class Assignments][assignments]{: .btn .btn--inverse}
 
 ## Overview
 
-### Project Goal
+### Background
 
-The goal of the final project was to leverage the computer graphics concepts we learned throughout the course to create a graphics scene that went beyond the complexity and scope of the assignments. The project was broken up into three stages: a [first draft][draft], [alpha version][alpha], and final version. In addition, we would need to submit a write-up and present a working demo of the scene to the class.
+For my final project in Wellesley's computer graphics course ([CS 307][cs307]), I collaborated with a classmate (Isa Lie '23) on creating a 3D graphics scene with an interactive, animated carousel music box using JavaScript. The goal of this project was to leverage the computer graphics concepts we learned throughout the course to create a graphics scene that went beyond the complexity and scope of the assignments. The project was broken up into three stages: a [first draft][draft], [alpha version][alpha], and [final version][project].
 
 ### Scene Description
 
 Our scene consists of an animated carousel music box from complex geometries that users can interact with by winding up the box and releasing the handle, which plays music. Some other components include texture mapped backgrounds (i.e. wooden floor and sky dome) and various lights (i.e. ambient, directional, spotlights) that can be toggled on/off with the light switch.
+
+<figure class="half">
+  <a href="/assets/images/carousel-lights-off.png"><img src="/assets/images/carousel-lights-off.png"></a>
+  <a href="/assets/images/carousel-lights-on.png"><img src="/assets/images/carousel-lights-on.png"></a>
+</figure>
 
 ## Graphics Concepts
 
@@ -97,7 +105,7 @@ if (intersects.length > 0) {
 
 ### Animation
 
-To model a real music box, users can press 'w' to "wind up" the mechanism, allowing the carousel to freely spin upon releasing the handle. This involved 3 variables, `windStepCycle`, `currentStep`, and `total`. While incrementing the currentStep and total variables by one with the advancement of each frame, each time the user winds up the handle, the handle and carousel slowly rotate counter-clockwise until reaching a certain number of frames (established as our `windStepCycle` constant). Then, pushing 'r' emulates releasing the handle, causing the handle and carousel spin faster and clockwise until the total variable is reset to 0.
+To model a real music box, users can press 'w' to "wind up" the mechanism, allowing the carousel to freely spin upon releasing the handle. This involved 3 variables, `windStepCycle`, `currentStep`, and `total`. While incrementing the `currentStep` and `total` variables by one with the advancement of each frame, each time the user winds up the handle, the handle and carousel slowly rotate counter-clockwise until reaching a certain number of frames (established as our `windStepCycle` constant). Then, pushing 'r' emulates releasing the handle, causing the handle and carousel spin faster and clockwise until the total variable is reset to 0.
 
 Code snippet of key wind-up animation:
 
@@ -126,11 +134,12 @@ if (spinParams.step > spinParams.wind) {
 * [TW module][tw]: Professor Scott Anderson's custom API layered on top of Three.js to package common operations
 * [CS 307 website][cs307]: enrolled in Spring 2021, instructed by Professor Ellen Hildreth
   
-[project]:  https://peyton-a-wang.github.io/cs307-wellesley-cg/project-final/final-scene.html
-[repo]:     https://github.com/peyton-a-wang/cs307-wellesley-cg
-[draft]:    https://peyton-a-wang.github.io/cs307-wellesley-cg/hw4/hwk4-creative-scene.html
-[alpha]:    https://peyton-a-wang.github.io/cs307-wellesley-cg/project-alpha/demo.html
-[three-js]: https://threejs.org/
-[webgl]:    https://registry.khronos.org/webgl/specs/latest/2.0/
-[tw]:       https://cs.wellesley.edu/~cs307/threejs/libs/tw-documented.shtml
-[cs307]:    https://cs.wellesley.edu/~cs307/
+[project]:     https://peyton-a-wang.github.io/cs307-wellesley-cg/project-final/final-scene.html
+[repo]:        https://github.com/peyton-a-wang/cs307-wellesley-cg/tree/master/project-final
+[assignments]: https://peyton-a-wang.github.io/cs307-wellesley-cg/
+[draft]:       https://peyton-a-wang.github.io/cs307-wellesley-cg/hw4/hwk4-creative-scene.html
+[alpha]:       https://peyton-a-wang.github.io/cs307-wellesley-cg/project-alpha/demo.html
+[three-js]:    https://threejs.org/
+[webgl]:       https://registry.khronos.org/webgl/specs/latest/2.0/
+[tw]:          https://cs.wellesley.edu/~cs307/threejs/libs/tw-documented.shtml
+[cs307]:       https://cs.wellesley.edu/~cs307/

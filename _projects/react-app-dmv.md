@@ -58,10 +58,13 @@ npm start
 ### Languages & Libraries
 
 <div class="tech-logos">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+  <a href="https://www.python.org" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+  <a href="https://www.w3schools.com/css/" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
+  <a href="https://www.w3.org/html/" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
+  <a href="https://reactjs.org/" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40" height="40"/> </a>
+  <a href="https://pandas.pydata.org/" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a>
+  <a href="https://www.crummy.com/software/BeautifulSoup/" rel="noreferrer"> <img src="https://www.crummy.com/software/BeautifulSoup/10.1.jpg" alt="beautiful soup" width="40" height="40"/> </a>
 </div>
 
 ### References
@@ -69,8 +72,6 @@ npm start
 * [`create-react-app`][create-react]: create React app from scratch
   * followed steps in [deployment guide][guide]
 * [`gh-pages`][gh-pages]: publish app files to GitHub pages
-* [`BeautifulSoup`][bs4]: web scrape quiz questions
-* [`pandas`][pandas]: categorize questions in dataframe and output as json
 
 [app]:          https://peyton-a-wang.github.io/chinese-practice-dmv-test/
 [repo]:         https://github.com/peyton-a-wang/chinese-practice-dmv-test

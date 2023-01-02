@@ -8,7 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-gist"
   gem "jemoji"
-  gem 'jekyll-target-blank'
   gem 'jekyll-archives'
 end
 

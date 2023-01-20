@@ -25,24 +25,24 @@ Over 15 years later, I stumbled across my dad's program when looking through som
 
 To run this app locally, follow the steps below!
 
-Clone this repository.
+1. Clone this repository.
 
-{% highlight shell %}
-git clone https://github.com/peyton-a-wang/math-decode-game.git
-{% endhighlight %}
+   ```shell
+   git clone https://github.com/peyton-a-wang/math-decode-game.git
+   ```
 
-Install dependencies from the root directory.  
+2. Install dependencies from the root directory.  
 
-{% highlight shell %}
-cd math-decode-game
-npm install
-{% endhighlight %}
+   ```shell
+   cd math-decode-game
+   npm install
+   ```
 
-Run the app in development mode and view it in the browser.
+3. Run the app in development mode and view it in the browser.
 
-{% highlight shell %}
-npm run dev
-{% endhighlight %}
+   ```shell
+   npm run dev
+   ```
 
 ## Technology & Tools
 
@@ -56,7 +56,7 @@ npm run dev
 
 ### References
 
-* [Vue CLI deployment docs][vue-docs]: deploy Vue app to Github pages
+* [Vue CLI deployment docs][vue-docs]: deploy Vue app to GitHub pages
   
 [app]:      https://peyton-a-wang.github.io/math-decode-game/
 [repo]:     https://github.com/peyton-a-wang/math-decode-game

@@ -112,7 +112,6 @@ Code snippet of key wind-up animation:
 {% highlight javascript %}
 oneStep();
 if (spinParams.step > spinParams.wind) {
-  console.log(spinParams.wind);
   stopAnimation();
 } else {
   animationID = requestAnimationFrame(animate);

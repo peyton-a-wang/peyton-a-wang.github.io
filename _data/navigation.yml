@@ -1,8 +1,8 @@
 main:
   - title: "About"
     url: /
-  - title: "Experience"
-    url: /experience/
+  # - title: "Experience"
+  #   url: /experience/
   - title: "Projects"
     url: /projects/
   - title: "Resume"
